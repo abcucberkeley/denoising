@@ -1,0 +1,17 @@
+name: denoise  # Change environment name if needed
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.10  # Adjust Python version as needed
+  - pytorch
+  - torchvision
+  - tqdm
+  - matplotlib
+  - numpy
+  - pip
+  - pip:
+      - torch-summary
+      - tensorboard
+      - cpp_tiff
+
