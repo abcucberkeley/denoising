@@ -32,7 +32,7 @@ Run training locally:
 python src/train.py --train_root /clusterfs/nvme/sayan/AI/training_denoise/ --model_root /clusterfs/nvme/sayan/AI/training_denoise/models --model_name drunet --config_file_path src/config.json
 ```
 
-Or run via SLURM scheduler using the provided bash script (edit `OUTDIR` and `MODEL_NAME` inside the bash file as needed):
+Or run via SLURM scheduler using the provided bash script (edit `OUTDIR`, `MODEL_NAME`, and resource allocation inside the bash file as needed):
 
 ```bash
 bash src/train.sh
