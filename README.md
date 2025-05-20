@@ -21,8 +21,10 @@ conda activate denoise
 ## Get Started
 Set `denoising` as the present working directory. 
 ### Training
-First, update the `src/config.json` file containing the model hyperparameters as required. The loss function, optimizer, learning_rate scheduler can be updated inside `src/train.py`.
-The `train_root` directory should contain two subdirectories `input` and `gt` representing the input to be passed to the model, and the ground truth. There should be a one-to-one correspondence of the filenames inside the individual subdirectories. Currently, there is support for only TIFF files.
+- First, update the `src/config.json` file containing the model hyperparameters as required. 
+- The loss function, optimizer, learning_rate scheduler can be updated inside `src/train.py`.
+- The `train_root` directory should contain two subdirectories `input` and `gt` representing the input to be passed to the model, and the ground truth. There should be a one-to-one correspondence of the filenames inside the individual subdirectories. 
+- Currently, there is support for only TIFF files.
 
 Run training locally:
 
@@ -46,5 +48,6 @@ python src/predict.py --predict_root /clusterfs/nvme/sayan/AI/testing_denoise/ -
 
 ## References
 
-[1]: “DRUNET: a dilated-residual U-Net deep learning network to segment optic nerve head tissues in optical coherence tomography images” (https://pubmed.ncbi.nlm.nih.gov/29984096/). 
-[2]: “Content-aware image restoration: pushing the limits of fluorescence microscopy” (https://www.nature.com/articles/s41592-018-0216-7).  
+[1]: “DRUNET: a dilated-residual U-Net deep learning network to segment optic nerve head tissues in optical coherence tomography images” (https://pubmed.ncbi.nlm.nih.gov/29984096/).
+
+[2]: “Content-aware image restoration: pushing the limits of fluorescence microscopy” (https://www.nature.com/articles/s41592-018-0216-7).   
