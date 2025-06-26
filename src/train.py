@@ -153,7 +153,8 @@ if __name__ == '__main__':
 
         writer.add_scalars("loss", {'train': mean_train_loss, 'validation': mean_validation_loss}, e)
 
-        scheduler.step(mean_validation_loss)
+        # scheduler.step(mean_validation_loss)
+        scheduler.step()
 
         hist["train_loss"].append(mean_train_loss.cpu().detach().numpy())
         hist["validation_loss"].append(mean_validation_loss.cpu().detach().numpy())
